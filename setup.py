@@ -1,26 +1,20 @@
 from setuptools import setup, find_packages
-import all_classifier
-
-with open("README.md", "r", encoding="utf-8") as file:
-    long_description = file.read()
 
 setup(
-    name='all-classifier-uygar',
-    version=all_classifier.__version__,
+    name='all-classifier-uygar-final-v3', # İsmi tekrar değiştirdik
+    version='0.1.3',
     author='uygar',
     author_email='uygarkutlug@gmail.com',
-    description=' Test multiple classification models and return their performance metric values.',
-    long_description=long_description,
-    long_description_content_type="text/markdown",
+    description='Test multiple classification models.',
+    long_description='Test multiple classification models and return their performance metrics.',
+    long_description_content_type="text/plain", # README okumayı iptal ettik, düz metin yaptık
     packages=find_packages(),
-    install_requires=['pandas','scikit-lear','xgboost','lightgbm'],
-    licence='MIT',
+    install_requires=['pandas', 'scikit-learn', 'xgboost', 'lightgbm'],
+    license='MIT',
     classifiers=[
-        'License :: OSI Approved :: MIT license',
+        'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.11',
-    url='https://github.com/UygarKutlug/all_classifier.git'
-
 )
