@@ -21,6 +21,6 @@ setup(
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.11',
-    url=''
+    url='https://github.com/UygarKutlug/all_classifier.git'
 
 )
